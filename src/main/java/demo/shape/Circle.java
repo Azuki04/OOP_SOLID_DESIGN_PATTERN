@@ -21,4 +21,13 @@ public class Circle extends Shape {
         System.out.printf("Area of circle with diameter %d is %f\n", diameter, area);
         return area;
     }
+
+
+    public int getDiameter() {
+        return diameter;
+    }
+
+    public void setDiameter(int diameter) {
+        this.diameter = diameter;
+    }
 }
