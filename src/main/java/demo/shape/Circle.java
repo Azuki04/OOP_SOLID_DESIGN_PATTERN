@@ -22,6 +22,10 @@ public class Circle extends Shape {
         return area;
     }
 
+    public double getSector(int angle) {
+        return (angle / 360.0) * calculateArea();
+    }
+
 
     public int getDiameter() {
         return diameter;
