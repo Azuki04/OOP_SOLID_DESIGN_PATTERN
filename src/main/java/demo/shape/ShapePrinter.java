@@ -30,7 +30,7 @@ public class ShapePrinter {
 
 
     // if use list put .get() in the method
- public String ShapesAreaIndex1(List<Shape> shapes) {
+ public String jsonShapeArea(List<Shape> shapes) {
         return String.format("{\"sum\": %f}", areaCalculator.sum(shapes));
     }
 
