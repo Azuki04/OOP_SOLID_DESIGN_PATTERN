@@ -2,23 +2,25 @@ package demo.shape;
 
 public class Circle extends Shape {
 
-    private int diameter;
+    private double diameter;
+    private double radius;
 
-    public Circle(int x, int y, int diameter) {
+    public Circle(int x, int y, double diameter) {
         super(x, y);
 
         this.diameter = diameter;
+        this.radius = diameter / 2.0;
     }
 
     @Override
     public void draw() {
-        System.out.printf("Drawing a circle at (%d,%d) with diameter %d\n", x, y, diameter);
+        System.out.printf("Drawing a circle at (%d,%d) with diameter %f\n", x, y, diameter);
     }
 
     @Override
     public double calculateArea() {
         double area = Math.PI * Math.pow((diameter / 2.0), 2);
-        System.out.printf("Area of circle with diameter %d is %f\n", diameter, area);
+        System.out.printf("Area of circle with diameter %f  and radius %f is %f\n", diameter,radius, area);
         return area;
     }
 
@@ -27,11 +29,20 @@ public class Circle extends Shape {
     }
 
 
-    public int getDiameter() {
+    public double getDiameter() {
         return diameter;
     }
 
-    public void setDiameter(int diameter) {
+    public void setDiameter(double diameter) {
         this.diameter = diameter;
+    }
+
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 }

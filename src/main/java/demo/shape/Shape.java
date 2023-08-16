@@ -15,5 +15,8 @@ public abstract class Shape implements ShapeWithArea {
         System.out.printf("Shape has been moved to (%d,%d)\n", newX, newY);
     }
 
+    //An abstract method is a method that is declared but not defined in a class. It acts as a placeholder for methods that must be implemented in subclasses.
+
+    // Don`t now why not use in as Interface --> ShapeWithArea
     public abstract void draw();
 }
