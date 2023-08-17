@@ -3,6 +3,7 @@ import animal.Cat;
 import animal.Dog;
 import animal.Printer;
 import demo.shape.*;
+import design_pattern.composite.MainComposite;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -83,6 +84,18 @@ public class Main {
 
         printer1.print();
         printer2.print();
+
+
+        ShapeSorter shapeSorter = new ShapeSorter();
+
+        shapeSorter.addShapeToSort(circle);
+        shapeSorter.addShapeToSort(rectangle);
+        shapeSorter.addShapeToSort(circle2);
+        shapeSorter.addShapeToSort(cube1);
+
+        shapeSorter.getSortedShapesAsc();
+
+        MainComposite.startComposite();
 
 
 
