@@ -4,6 +4,7 @@ import animal.Dog;
 import animal.Printer;
 import demo.shape.*;
 import design_pattern.composite.MainComposite;
+import design_pattern.strategy.MainStrategy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -96,6 +97,9 @@ public class Main {
         shapeSorter.getSortedShapesAsc();
 
         MainComposite.startComposite();
+
+
+        MainStrategy.startStrategy();
 
 
 
