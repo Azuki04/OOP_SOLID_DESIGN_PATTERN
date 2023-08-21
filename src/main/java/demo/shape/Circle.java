@@ -15,6 +15,7 @@ public class Circle extends Shape {
     @Override
     public void draw() {
         System.out.printf("Drawing a circle at (%d,%d) with diameter %f\n", x, y, diameter);
+
     }
 
     @Override

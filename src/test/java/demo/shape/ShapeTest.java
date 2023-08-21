@@ -12,14 +12,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class ShapeTest {
 
-    @Mock Shape mockedShape;
+    @Mock
+    Shape mockedShape;
 
     @Test
     public void testMoveTo() {
         // arrange
-        Mockito.doCallRealMethod()
-                .when(mockedShape)
-                .moveTo(anyInt(), anyInt());
+        Mockito.doCallRealMethod().when(mockedShape).moveTo(anyInt(), anyInt());
 
         // act
         mockedShape.moveTo(5, 5);

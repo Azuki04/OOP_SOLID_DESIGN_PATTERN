@@ -19,22 +19,21 @@ public class MainStrategy {
         DefenseBehavior defendNormal = new DefendNormal();
 
         FirePokemon Glurak = new FirePokemon("Glurak", 100, dragonClaw, defendBig);
-        FirePokemon Glumanda = new FirePokemon("Glumanda", 50, fireWhirl, defendNormal);
+        FirePokemon glumanda = new FirePokemon("Glumanda", 50, fireWhirl, defendNormal);
 
 
-        Glurak.showStatus();
-        Glumanda.showStatus();
+        glumanda.showStatus();
 
-        Glurak.attack(Glumanda);
-        Glumanda.showStatus();
+        Glurak.attack(glumanda);
+        glumanda.showStatus();
 
-        Glumanda.defense();
-        Glumanda.showStatus();
+        glumanda.defense();
+        glumanda.showStatus();
 
         // change attack behavior
-        Glumanda.setDefenseBehavior(defendBig);
-        Glumanda.defense();
-        Glumanda.showStatus();
+        glumanda.setDefenseBehavior(defendBig);
+        glumanda.defense();
+        glumanda.showStatus();
 
 
 

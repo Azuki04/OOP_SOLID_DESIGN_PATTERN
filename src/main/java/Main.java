@@ -4,6 +4,7 @@ import animal.Dog;
 import animal.Printer;
 import demo.shape.*;
 import design_pattern.composite.MainComposite;
+import design_pattern.decorator.MainDecorator;
 import design_pattern.strategy.MainStrategy;
 
 import java.util.ArrayList;
@@ -101,7 +102,14 @@ public class Main {
         MainStrategy.startStrategy();
 
 
+        ShapeMaker shapeDrawer = new ShapeMaker();
+        shapeDrawer.drawCircle();
 
+
+        MainDecorator.startDecorator();
+
+        Cat cat2 = new Cat();
+        System.out.println(cat2.sound());
 
 
     }
