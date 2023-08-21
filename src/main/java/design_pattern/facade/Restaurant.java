@@ -1,2 +1,6 @@
-package design_pattern.facade;public interface Restaurante {
+package design_pattern.facade;
+
+public interface Restaurant {
+    void getMenu();
+
 }
