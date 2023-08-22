@@ -2,10 +2,7 @@ package animal;
 
 public class Printer  {
 
-    Animal animal;
-
-    public Printer() {
-    }
+    private final Animal animal;
 
     public Printer(Animal animal) {
         this.animal = animal;
