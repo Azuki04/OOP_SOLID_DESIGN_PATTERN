@@ -8,8 +8,7 @@ import design_pattern.strategy.defende.DefendNormal;
 import design_pattern.strategy.defende.DefenseBehavior;
 
 public class MainStrategy {
-
-    public static void startStrategy() {
+    public static void main(String[] args) {
         System.out.println("Strategy pattern start");
 
         AttackBehavior dragonClaw = new DragonClaw();
@@ -39,4 +38,7 @@ public class MainStrategy {
 
         System.out.println("Strategy pattern end");
     }
+
+
+
 }

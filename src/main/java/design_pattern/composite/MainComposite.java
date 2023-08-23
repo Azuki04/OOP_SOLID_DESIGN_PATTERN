@@ -7,8 +7,6 @@ public class MainComposite {
         CompanyLoader.startComposite();
 
 
-
-
         /*
               CEO
            /       \

@@ -99,14 +99,13 @@ public class Main {
 
 
 
-        MainStrategy.startStrategy();
+
 
 
         ShapeMaker shapeDrawer = new ShapeMaker();
         shapeDrawer.drawCircle();
 
 
-        MainDecorator.startDecorator();
 
         Cat cat2 = new Cat();
         System.out.println(cat2.sound());
