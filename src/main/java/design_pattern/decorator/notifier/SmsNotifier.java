@@ -1,8 +1,10 @@
-package design_pattern.decorator;
+package design_pattern.decorator.notifier;
 
-public class SmsNotifier extends NotifierDecorator{
+import design_pattern.decorator.NotifierDecorator;
 
-    public SmsNotifier(INotifier notifier) {
+public class SmsNotifier extends NotifierDecorator {
+
+    public SmsNotifier(Notifier notifier) {
         super(notifier);
     }
 
