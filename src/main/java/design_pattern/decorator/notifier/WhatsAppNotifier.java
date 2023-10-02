@@ -1,8 +1,11 @@
-package design_pattern.decorator;
+package design_pattern.decorator.notifier;
 
-public class WhatsAppNotifier extends NotifierDecorator{
+import design_pattern.decorator.NotifierDecorator;
 
-        public WhatsAppNotifier(INotifier notifier) {
+public class WhatsAppNotifier extends NotifierDecorator {
+
+        public WhatsAppNotifier(Notifier notifier) {
+
             super(notifier);
         }
 

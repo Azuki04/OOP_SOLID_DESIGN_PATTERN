@@ -1,10 +1,12 @@
 package design_pattern.decorator;
 
-public class NotifierDecorator implements INotifier{
+import design_pattern.decorator.notifier.Notifier;
 
-    private INotifier notifier;
+public class NotifierDecorator implements Notifier {
 
-    public NotifierDecorator(INotifier notifier) {
+    private final Notifier notifier;
+
+    public NotifierDecorator(Notifier notifier) {
         this.notifier = notifier;
     }
 
