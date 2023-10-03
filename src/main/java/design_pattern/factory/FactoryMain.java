@@ -1,6 +1,7 @@
 package design_pattern.factory;
 
 import design_pattern.factory.burger_object.Burger;
+import design_pattern.factory.facade.FacadeMenuList;
 import design_pattern.factory.restaurant_factory.BeefBurgerCreator;
 import design_pattern.factory.restaurant_factory.BurgerRestaurant;
 import design_pattern.factory.restaurant_factory.VegiBurgerCreator;
@@ -20,6 +21,17 @@ public class FactoryMain {
         Burger vegiBurger = vegiResto.orderBurger();
         vegiBurger.prepare();
         System.out.println("Vegi Burger is ready");
+
+
+
+        System.out.println("====================================");
+
+        FacadeMenuList facadeMenuList = new FacadeMenuList();
+        facadeMenuList.orderAndPrepareBeefBurger();
+        System.out.println("====================================");
+        facadeMenuList.orderAndPrepareVegiBurger();
+        System.out.println("====================================");
+        facadeMenuList.orderAndPrepareAllBurgers();
 
     }
 }
