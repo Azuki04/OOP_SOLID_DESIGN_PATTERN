@@ -7,8 +7,6 @@ public class FirePokemon extends Pokemon{
 
 
 
-
-
     public FirePokemon(String name, int level, AttackBehavior attackBehavior, DefenseBehavior defenseBehavior) {
         super(name, level, attackBehavior, defenseBehavior);
     }
