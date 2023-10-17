@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompanyDirectory implements IEmployee{
-    private List<IEmployee> employeeList = new ArrayList<IEmployee>();
+    private List<IEmployee> employeeList = new ArrayList<>();
 
     @Override
     public void showEmployeeDetails() {
